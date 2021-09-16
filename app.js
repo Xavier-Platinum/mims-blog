@@ -29,6 +29,6 @@ app.use((req, res, next) => {
     res.status(404).send("page not found");
 })
 
-app.listen(7000, () => {
-    console.log("Server started at http://127.0.0.1:7000")
+app.listen(8000, () => {
+    console.log("Server started at http://127.0.0.1:8000")
 })

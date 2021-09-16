@@ -1,14 +1,5 @@
-<%- include("../includes/main/header.ejs") %> 
-<%- include("../includes/main/banner.ejs") %>
-<!-- 
-    image
-    desc
-    title
-    tag
-    author
-    date
- -->
-    <form action="/posts/create" method="post" enctype="multipart/form-data">
+
+    <form action="/posts/create" method="POST">
         <div class="form-row">
             <div class="col">
                 <label for="postTitle">Post Title</label>
@@ -27,7 +18,7 @@
             </div>
         </div>
         <div class="custom-file">
-            <input type="file" name="postImage" class="custom-file-input" id="postImage">
+            <input type="file" accept="image/*" name="postImage" class="custom-file-input" id="postImage">
             <label class="custom-file-label" for="postImage">Choose file</label>
         </div>
         <div class="form-group">
@@ -36,4 +27,3 @@
         </div>
         <button type="submit" class="btn btn-success">Create Post</button>
     </form>
-<%- include("../includes/main/footer.ejs") %> 
